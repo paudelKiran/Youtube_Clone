@@ -12,22 +12,25 @@ export const Header = () => {
     return (
         <div className='header'>
             <div className="header_left">
-                <MenuSharpIcon fontSize='medium' />
+                <MenuSharpIcon fontSize='medium' fontWeight="5px" />
                 <img className='header_yt_logo' src='./ytLogo.png' alt="" />
             </div>
 
             <div className="header_middle">
                 <div className="header_inputSearch">
                     <input type="text" placeholder='Search' />
-                    <SearchIcon />
+                    <div className="searchIconContainer">
+                        <SearchIcon className='searchIcon' />
+                    </div>
+
                 </div>
-                <MicIcon />
+                <MicIcon className='micIcon' />
             </div>
 
             <div className="header_right">
-                <VideoCallOutlinedIcon />
-                <NotificationIcon />
-                <AccountCircleIcon />
+                <VideoCallOutlinedIcon className='right_icons' />
+                <NotificationIcon className='right_icons' />
+                <AccountCircleIcon className='right_icons profile' />
             </div>
 
         </div>
