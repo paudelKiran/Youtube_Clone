@@ -1,0 +1,27 @@
+.row {
+    display: flex;
+    align-items: center;
+    margin: 6px 18px 6px 10px;
+    padding: 2px 0 2px 0;
+}
+
+.icon {
+    padding: 0 8px 0 18px;
+}
+
+
+.row:hover {
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.row:hover>.icon {
+    color: red;
+}
+
+.row>h4 {
+    margin: 2px;
+    font-weight: 500;
+    font-size: 15px;
+}

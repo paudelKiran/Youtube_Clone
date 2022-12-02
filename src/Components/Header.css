@@ -3,11 +3,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 6px 14px 16px 18px;
+    z-index: 100;
+    background-color: white;
 }
 
 .header_left {
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
 .header_yt_logo {
@@ -52,18 +55,18 @@
     border-top-right-radius: 23px;
     border-bottom-right-radius: 23px;
     min-height: 100% !important;
-    padding: 3px 0 3px 0;
+    padding: 5px 0px 0px 0px;
     border-collapse: collapse;
     z-index: 1;
 
 }
 
-.micIcon {
-    border-radius: 50px;
-    background-color: rgb(240, 240, 240);
-    padding: 6px;
-    margin-left: 5px;
+.searchIconContainer:hover>.searchIcon {
+    color: red;
+}
 
+.micIcon {
+    background-color: rgb(240, 240, 240)
 }
 
 .header_right {
@@ -79,4 +82,15 @@
     width: 40px !important;
     height: 30px !important;
     margin-right: 15px;
+}
+
+.icons {
+    border-radius: 50px;
+    padding: 6px;
+    margin-left: 5px;
+}
+
+.icons:hover {
+    color: red;
+    background-color: rgb(229, 229, 229);
 }

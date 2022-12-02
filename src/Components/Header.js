@@ -24,12 +24,12 @@ export const Header = () => {
                     </div>
 
                 </div>
-                <MicIcon className='micIcon' />
+                <MicIcon className='micIcon icons' />
             </div>
 
             <div className="header_right">
-                <VideoCallOutlinedIcon className='right_icons' />
-                <NotificationIcon className='right_icons' />
+                <VideoCallOutlinedIcon className='right_icons icons' />
+                <NotificationIcon className='right_icons icons' />
                 <AccountCircleIcon className='right_icons profile' />
             </div>
 

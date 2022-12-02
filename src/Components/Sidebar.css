@@ -1,0 +1,9 @@
+.sidebar {
+    flex: 0.15;
+
+}
+
+.sidebar>hr {
+    color: rgb(224, 224, 224);
+    margin: 15px 20px 15px 15px;
+}
