@@ -13,6 +13,7 @@ import AudiotrackIcon from '@mui/icons-material/Audiotrack';
 import SidebarRow from './SidebarRow';
 
 const SideBar = () => {
+
     return (
         <div className="sidebar">
             <SidebarRow title="Home" Icon={HomeIcon} />
@@ -25,6 +26,7 @@ const SideBar = () => {
             <SidebarRow title="Watch Later" Icon={WatchLaterIcon} />
             <SidebarRow title="Liked Videos" Icon={ThumbUpAltIcon} />
             <SidebarRow title="Show More" Icon={KeyboardArrowDownIcon} />
+            <hr />
         </div>
     )
 }
