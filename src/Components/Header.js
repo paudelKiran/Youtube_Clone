@@ -8,14 +8,27 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 import './Header.css'
 
-export const Header = () => {
+export const Header = (props) => {
+    const handleMenuIcon = () => {
+        if (props.sideBarState.status) {
+            props.SetsideBarState({
+                status: false
+            })
+        }
+        else {
+            props.SetsideBarState({
+                status: true
+            })
+        }
+    }
     return (
         <div className='header'>
             <div className="header_left">
-                <MenuSharpIcon fontSize='medium' fontWeight="5px" />
+                <div className="menuIcon" onClick={handleMenuIcon}>
+                    <MenuSharpIcon fontSize='medium' fontWeight="5px" />
+                </div>
                 <img className='header_yt_logo' src='./ytLogo.png' alt="" />
             </div>
-
             <div className="header_middle">
                 <div className="header_inputSearch">
                     <input type="text" placeholder='Search' />

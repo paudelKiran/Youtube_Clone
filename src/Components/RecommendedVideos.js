@@ -2,7 +2,7 @@ import React from 'react'
 import './RecommendedVideos.css'
 import VideoCard from './VideoCard';
 
-const RecommendedVideos = () => {
+const RecommendedVideos = (props) => {
     const videoDetails = [
         {
             title: "GTA 5 gameplay",
